@@ -1,1 +1,8 @@
 .venv
+src/models/hf_models
+powerlevel10k
+.DS_Store
+.idea
+.vscode
+__pycache__/
+*.pyc

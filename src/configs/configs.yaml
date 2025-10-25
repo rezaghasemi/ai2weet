@@ -1,0 +1,38 @@
+txt_model:
+  models_path: "src/models/hf_models"
+  name: "mergekit-community/Qwen3-7B-Instruct"
+  generation_params:
+    max_new_tokens: 10
+    temperature: 0.7
+    top_k: 1
+    top_p: 0.95
+    do_sample: False
+
+fig_model:
+  models_path: "src/models/hf_models"
+  name: runwayml/stable-diffusion-v1-5
+  generation_params:
+    num_inference_steps: 10
+    guidance_scale: 7.5
+    height: 512
+    width: 512
+
+
+
+database:
+  name: sqlite
+  path: "sqlite:///src/db/database/local_database.db"
+
+txt_prompts:
+  prefix: "You are an assistant that generates concise and relevant hashtags for social media posts.
+          Given a piece of text, identify its main themes or topics and produce exactly two hashtags that are:
+          Short (1–3 words each)
+          Highly relevant to the text
+          Written in lowercase (no spaces or punctuation)
+          Without any explanation or extra text — only return the hashtags separated by a space.
+          Example:
+          Input: 'I just finished training a reinforcement learning agent to balance a pole!
+          Output: #reinforcementlearning #machinelearning
+          Now generate two hashtags for the following text: \n"
+  suffix: '\n\n\n Output:'
+  
