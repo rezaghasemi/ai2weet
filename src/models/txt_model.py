@@ -39,3 +39,6 @@ def generate_hashtags(prompt: str):
                        top_k=cfg.txt_model.generation_params.top_k,
                        top_p=cfg.txt_model.generation_params.top_p,
                        temperature=cfg.txt_model.generation_params.temperature)[0]['generated_text']
+
+if __name__ == "__main__":
+    print(generate_hashtags("Exploring the beautiful landscapes of New Zealand!"))

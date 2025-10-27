@@ -1,6 +1,6 @@
 txt_model:
   models_path: "src/models/hf_models"
-  name: "mergekit-community/Qwen3-7B-Instruct"
+  name: "Qwen/Qwen3-1.7B"
   generation_params:
     max_new_tokens: 10
     temperature: 0.7

@@ -40,13 +40,13 @@ async def generate_content(prompt: Prompt):
     description = prompt.description
     try:
         hashtags = generate_hashtags(description, cfg)
-        img = generate_image(description, cfg)
+        # img = generate_image(description, cfg)
         os.makedirs("src/db/static/generated", exist_ok=True)
         # add generated content to the database and get the id
         id = add_generated_content(description, hashtags)
         # save the image with the id as filename
         image_url = f"src/db/static/generated/{id}.png"
-        img.save(image_url)
+        # img.save(image_url)
         return {
             "hashtags": hashtags,
             "image_url": image_url

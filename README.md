@@ -2,6 +2,10 @@
 
 A **local AI-powered website** that generates **Twitter-friendly images and hashtags** from user text, with a **human-feedback loop** for continuous improvement using **GPT-2 fine-tuned with LoRA**.
 
+![Last Commit](https://img.shields.io/github/last-commit/rezaghasemi/ai2weet) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+
+
 ---
 
 ## Features
