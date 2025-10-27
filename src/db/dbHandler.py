@@ -34,7 +34,7 @@ def add_feedback(id, user_feedback = 0):
     return None
 
 
-def add_generated_content(description, hashtags, image_url):
+def add_generated_content(description, hashtags):
     feedback = genContent(
         text=description,
         hashtags=",".join(hashtags),
@@ -42,7 +42,7 @@ def add_generated_content(description, hashtags, image_url):
     )
     session.add(feedback)
     session.commit()
-    return feedback.id  
+    return feedback.id 
 
 
 def get_all_feedback():
