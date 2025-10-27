@@ -117,11 +117,4 @@ http://127.0.0.1:8000
 
 MIT License. Feel free to modify and extend the project.
 
-```
-
 ---
-
-If you want, I can also create a **shorter, “project showcase” version** of this README for GitHub — optimized for visibility and quick understanding for other developers.  
-
-Do you want me to do that next?
-```
