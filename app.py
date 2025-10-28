@@ -1,14 +1,14 @@
 from src.db.dbHandler import add_feedback, add_generated_content
 from omegaconf import OmegaConf
-from src.models.txt_model import generate_hashtags
-from src.models.fig_model import generate_image
-from src.models.models_trainer import train_model
 import os
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from pydantic import BaseModel
 
 cfg = OmegaConf.load("src/configs/configs.yaml")
+
+
+
 class Prompt(BaseModel):
     description: str
 

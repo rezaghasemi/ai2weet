@@ -1,23 +1,23 @@
-txt_model:
-  models_path: "src/models/hf_models"
-  name: "Qwen/Qwen3-1.7B"
-  generation_params:
-    max_new_tokens: 10
-    temperature: 0.7
-    top_k: 1
-    top_p: 0.95
-    do_sample: False
-  
+models:
+  type: external
 
-fig_model:
-  models_path: "src/models/hf_models"
-  name: "segmind/tiny-sd"
-  generation_params:
-    num_inference_steps: 10
-    guidance_scale: 7.5
-    height: 512
-    width: 512
+txt_external_model:
+  name: OPENAI
+  model: gpt-4.1-nano
+  api_key_path: "src/configs/api_keys/OPENAI_API_KEY.env"
 
+
+img_external_model:
+  name: OPENAI
+  type: gpt-4-vision-preview
+  api_key_path: "src/configs/api_keys/OPENAI_API_KEY.env"
+
+
+txt_local_model:
+  name: ---
+
+img_local_model:
+  name: ---
 
 database:
   name: sqlite

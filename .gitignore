@@ -1,6 +1,8 @@
 .venv
 src/models/hf_models
-powerlevel10k
+src/configs/api keys/chatgpt_api_key.env
+
+
 .DS_Store
 .idea
 .vscode
