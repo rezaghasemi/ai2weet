@@ -1,6 +1,6 @@
 .venv
 src/models/hf_models
-src/configs/api keys/chatgpt_api_key.env
+src/configs/api_keys/chatgpt_api_key.env
 
 
 .DS_Store
