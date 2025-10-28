@@ -1,5 +1,6 @@
 .venv
 src/models/hf_models
+src/configs/api_keys/OPENAI_API_KEY.env
 
 
 .DS_Store
